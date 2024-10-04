@@ -3,7 +3,6 @@ const jwt = require('jsonwebtoken');
 const axios = require('axios');
 const dotenv = require('dotenv');
 
-// Cargar las variables de entorno
 dotenv.config();
 
 const app = express();
@@ -11,7 +10,6 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
-// Ruta de prueba para verificar que el servidor está funcionando
 app.get('/', (req, res) => {
   res.send('¡Servidor funcionando correctamente!');
 });
